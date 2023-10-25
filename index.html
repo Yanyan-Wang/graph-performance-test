@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <script src="node_modules/@antv/g2/dist/g2.full.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div style="display: inline-flex; width: 100%">
+      <div style="text-align: center">
+        <h3>Zoom Canvas FPS</h3>
+        <span style="font-size: 14px; color: #999">x: #nodes + #edges</span>
+        <div id="zoom-comparing" style="height: 400px; width: 400px"></div>
+      </div>
+      <div style="text-align: center">
+        <h3>Drag Canvas FPS</h3>
+        <span style="font-size: 14px; color: #999">x: #nodes + #edges</span>
+        <div id="drag-comparing" style="height: 400px; width: 400px"></div>
+      </div>
+      <div style="text-align: center">
+        <h3>First Rendering Time</h3>
+        <div
+          id="first-rendering-comparing"
+          style="height: 400px; width: 400px"
+        ></div>
+      </div>
+    </div>
+    <script type="module" src="/comparingCharts.js"></script>
+  </body>
+</html>
